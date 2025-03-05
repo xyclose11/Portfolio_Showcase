@@ -13,6 +13,6 @@ export class HeroComponent {
 
   ngOnInit() {}
 
-  technologies: string[] = ['C#', ".NET", "ASP.NET Core", "JavaScript/TypeScript", 'Java', 'Angular', 'React', 'SQL', 'Python'];
+  technologies: string[] = ['C#', ".NET", "ASP.NET Core", "JavaScript", "TypeScript", 'Java', 'Angular', 'React', 'SQL', 'Python'];
 
 }
