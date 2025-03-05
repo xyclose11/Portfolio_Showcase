@@ -1,9 +1,19 @@
 <div>
     <section class="hero">
         <div class="hero-content">
-            <h1>Harris Gustafson</h1>
-            <h2 id="dynamic-text">Software Engineer</h2>
-            <p>I translate ideas into reliable software solutions.</p>
+            <div class="hero-heading">
+                <h1>Harris Gustafson</h1>
+                <h2 id="dynamic-text">Software Engineer</h2>
+                <p>I translate ideas into reliable software solutions.</p>
+            </div>
+            <div class="hero-technologies">
+                <ul class="hero-list" *ngFor="let technology of technologies">
+                    <li>
+                        <app-technology-card [technology]="technology"></app-technology-card>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </section>
 </div>

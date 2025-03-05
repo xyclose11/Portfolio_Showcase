@@ -58,3 +58,14 @@
         font-weight: 400;
     }
 }
+
+.hero-technologies {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.hero-list {
+    list-style-type: none;
+}
