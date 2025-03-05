@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  email = 'harris.gustafson@outlook.com';
+  email = 'Harris.Gustafson@outlook.com';
   linkedin = 'https://www.linkedin.com/in/harrisgustafson/';
   github = 'https://github.com/xyclose11';
 }
