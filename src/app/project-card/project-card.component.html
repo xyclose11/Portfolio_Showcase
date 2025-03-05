@@ -1,1 +1,10 @@
-<p>project-card works!</p>
+<div class="project-card">
+    <h1>{{project?.title}}</h1>
+    <h1>{{project?.description}}</h1>
+    <h1>{{project?.images}}</h1>
+    <h1>{{project?.github}}</h1>
+
+    <div *ngFor="let technology of project?.technologies">
+        <app-technology-card [technology]="technology"></app-technology-card>
+    </div>
+</div>
