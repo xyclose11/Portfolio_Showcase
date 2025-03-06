@@ -1,22 +1,21 @@
 <div class="project-card">
-    <div class="project-card__header">
-        <h1 class="project-card__title">{{project?.title}}</h1>
+    <div class="project-card__content">
+        <div class="project-card__header">
+            <h1 class="project-card__title">{{project?.title}}</h1>
+        </div>
+        <div class="project-card__description">
+            <p>{{project?.description}}</p>
+        </div>
+        <div class="project-card__footer">
+            <a [href]="project?.github" target="_blank">View on GitHub</a>
+            <div class="project-card__tech">
+                <div *ngFor="let technology of project?.technologies">
+                    <app-technology-card [technology]="technology"></app-technology-card>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="project-card__status">
-        <p>HI</p>
-    </div>
-    <div class="project-card__description">
-        <p>{{project?.description}}</p>
-    </div>
-    <div class="project-card__status">
-        <p>HI</p>
-    </div>
-    <div class="project-card__footer">
-        <h1>{{project?.github}}</h1>
-    </div>
-    <h1>{{project?.images}}</h1>
-
-    <div *ngFor="let technology of project?.technologies">
-        <app-technology-card [technology]="technology"></app-technology-card>
+    <div class="project-card__slideshow">
+        <img width="500" [src]="getCurrentImage()" alt="Project Image" />
     </div>
 </div>

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { ProjectsComponent } from "../projects/projects.component";
-import { TechnologyCardComponent } from "../technology-card/technology-card.component";
+import { ProjectsComponent } from '../projects/projects.component';
+import { TechnologyCardComponent } from '../technology-card/technology-card.component';
 import { CommonModule } from '@angular/common';
 
 export interface Project {
@@ -15,8 +15,12 @@ export interface Project {
   selector: 'app-project-card',
   imports: [TechnologyCardComponent, CommonModule],
   templateUrl: './project-card.component.html',
-  styleUrl: './project-card.component.scss'
+  styleUrl: './project-card.component.scss',
 })
 export class ProjectCardComponent {
   @Input() project: Project | undefined;
+
+  getCurrentImage() {
+    return this.project?.images[0];
+  }
 }
