@@ -13,6 +13,26 @@
     &:hover {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     }
+
+    .project-card__link {
+        text-decoration: none;
+        color: v.$primary-color;
+        font-weight: bold;
+        transition: color 0.3s ease;
+
+        padding: 0.5rem 1rem;
+        border: 2px solid v.$primary-color;
+        border-radius: 0.25rem;
+        background-color: v.$secondary-color;
+        text-align: center;
+        margin-top: 15px;
+
+        &:hover {
+            color: v.$secondary-color;
+            background-color: v.$primary-color;
+            border-color: v.$secondary-color;
+        }
+    }
     
     .project-card__header {
         display: flex;
@@ -21,7 +41,7 @@
         margin-bottom: 1rem;
     
         .project-card__title {
-            font-size: 2.0rem;
+            font-size: 2.25rem;
             font-weight: bold;
         }
     }
@@ -35,7 +55,7 @@
         margin: 5px;
         border-radius: 5px;
         padding: 5px;
-        background-color: rgb(196, 196, 196);
+        background-color: rgb(236, 236, 236);
 
         img {
             max-width: 100%;
@@ -46,12 +66,14 @@
 
     .project-card__tech {
         display: flex;
-        justify-content: center;
+        justify-content: start;
+        flex-wrap: wrap;
     }
     
     .project-card__description {
         font-size: 1rem;
         margin-bottom: 1rem;
+        text-align: start;
     }
     
     .project-card__footer {
