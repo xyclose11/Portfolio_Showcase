@@ -1,4 +1,13 @@
 .projects {
-    justify-content: space-around;
+    justify-content: left;
     margin-top: 20px;
+    padding: 30px;
+}
+
+#project__header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2.0rem;
 }

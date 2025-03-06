@@ -14,7 +14,7 @@ export class ProjectsComponent {
       title: 'Melin',
       description:
         'An academic reference management applcaiton that allows users to create, edit, and delete references. Implemented PDF, and JSON parsing, alongside a custom barcode implementation that allows users to automatically scan a barcode and upload the reference data, using the mobile application. Also implemented sorting, filtering, tagging, grouping, user auth and searching functionality.',
-      images: ['https://via.placeholder.com/150'],
+      images: ['images/Melin.png'],
       technologies: ['Angular', 'Ionic', 'Firebase'],
       github: 'https://github.com/xyclose11/Melin',
     },

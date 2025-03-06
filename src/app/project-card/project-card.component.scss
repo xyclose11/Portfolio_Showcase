@@ -27,12 +27,21 @@
     }
 
     .project-card__content {
-        max-width: 600px;
+        max-width: 400px;
     }
 
     .project-card__slideshow {
-        max-width: 800px;
-        margin: auto;
+        max-width: 1000px;
+        margin: 5px;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: rgb(196, 196, 196);
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 1%;
+        }
     }
 
     .project-card__tech {
