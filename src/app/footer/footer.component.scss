@@ -1,45 +1,74 @@
 @use '../../styles/variables' as v;
 
 .footer {
+    background-color: v.$color;
+    color: #f5f5f5;
+    padding: 2.5rem 4rem;
     display: flex;
-    background-color: v.$secondary-color;
-    padding: 20px;
-    font-size: 1.5em;
-    box-shadow: 0px -8px 9px rgba(0, 0, 0, 0.2);
-    bottom: 0px;
-    margin-top: 60px;
-}
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
 
-.footer__about {
-
-    h2 {
+    &__about {
+      flex: 2;
+      
+      h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+      
+      h5 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
         font-weight: 400;
+        color: #cccccc;
+      }
+      
+      p {
+        font-size: 0.9rem;
+        color: #bbbbbb;
+        margin-top: 0.5rem;
+      }
     }
-
-    h5 {
-        font-weight: 400;
-    }
-
-    p {
-        font-size: 1.25rem;
-        margin-bottom: 20px;
-    }
-}
-
-.footer__contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-
-    a {
+    
+    &__contact {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      
+      a {
+        display: flex;
+        color: #4fc3f7;
+        gap: 0.5rem;
+        align-items: center;
+        justify-items: start;
         text-decoration: none;
-        transition: color 0.3s ease;
-
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+        transition: color 0.2s ease;
+        cursor: pointer;
+        
         &:hover {
-            color: v.$color;
+          color: v.$secondary-color;
         }
+      }
     }
-}
+    
+    @media (max-width: 768px) {
+      flex: none;
+      flex-direction: column;
+      padding: 2rem;
+      
+      &__about {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+      
+      &__contact {
+        align-items: center;
+      }
+    }
+  }
