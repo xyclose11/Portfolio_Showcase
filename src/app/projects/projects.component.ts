@@ -23,14 +23,23 @@ export class ProjectsComponent {
       description: 'This is the description of project 2',
       images: ['images/ProductionLogFailure.png'],
       technologies: ['Angular', 'Ionic', 'Firebase'],
-      github: 'https://github.com/xyclose11/Melin',
+      github: 'https://github.com/SensitTechnologies/MESS',
     },
     {
       title: 'Project 3',
       description: 'This is the description of project 3',
-      images: ['https://via.placeholder.com/150'],
+      images: [
+        'https://placehold.co/600x400/EEE/31343C?font=montserrat&text=Images Coming Soon...',
+      ],
       technologies: ['Angular', 'Ionic', 'Firebase'],
-      github: 'https://github.com/xyclose11/Melin',
+      github: 'https://github.com/xyclose11/cashmoneycitations',
+    },
+    {
+      title: 'Project 3',
+      description: 'This is the description of project 3',
+      images: ['images/Rotate.png'],
+      technologies: ['Angular', 'Ionic', 'Firebase'],
+      github: 'https://github.com/xyclose11/Paint',
     },
   ];
 }

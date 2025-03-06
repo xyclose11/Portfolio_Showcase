@@ -1,15 +1,10 @@
 @use "../../styles/variables" as v;
 
 .hero {
-    position: relative;
     padding: 10px;
-    margin-top: calc(var(--wt-offset-top-unit, 8px)* 4);
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    padding-left: 22px;
-    padding-right: 22px;
-    max-width: 1276px;
+    margin-top: calc(var(--wt-offset-top-unit, 40px)* 4);
+    margin-left: 30px;
+    height: 100vh;
 }
 
 @media screen and (max-width: 1276px) {
@@ -70,34 +65,9 @@
     flex: 2;
 }
 
-.hero-technologies {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
-
-.hero-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 4px;
-}
-
-.hero-list li {
-    margin: 0;
-}
 
 @media (max-width: 768px) {
     .hero-content {
       flex-direction: column;
-    }
-    
-    .hero-technologies {
-      width: 100%;
-      margin-top: 1.5rem;
     }
 }
