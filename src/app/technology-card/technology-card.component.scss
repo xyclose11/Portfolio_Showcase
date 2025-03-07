@@ -28,3 +28,24 @@
     font-weight: 400;
     font-size: medium;
   }
+
+@media screen and (max-width: 1150px) {
+  .tech-card {
+    padding: 4px 8px;
+  }
+
+  .tech-name {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tech-card {
+    padding: 3px 6px;
+    margin: 3px 3px 3px 0;
+  }
+
+  .tech-name {
+    font-size: x-small;
+  }
+}

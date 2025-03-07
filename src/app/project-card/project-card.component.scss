@@ -78,14 +78,28 @@
     
     .project-card__footer {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1150px) {
     .project-card {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .project-card__content {
+            max-width: 100%;
+        }
+        
+        .project-card__tech {
+            display: flex;
+            font-size: small;
+            justify-content: space-around;
+        }
+
         .project-card__header {
             flex-direction: column;
             align-items: flex-start;
@@ -93,8 +107,12 @@
     
         .project-card__footer {
             flex-direction: column;
+            justify-content: center;
             align-items: flex-start;
+        }
 
+        .project-card__slideshow {
+            margin-top: 15px;
         }
     }
     

@@ -17,7 +17,7 @@
 
 .header {
     background-color: #FFFFFF;
-    padding: 15px;
+    padding: 15px 15px 15px 15px;
     border-radius: v.$navbar-radius;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: sticky;
@@ -25,20 +25,67 @@
     z-index: 1000;
     nav {
         display: flex;
-        justify-content: right;
-        gap: 15px;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav__icon {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            h2 {
+                font-size: larger;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+
+        .nav__links {
+            display: flex;
+            justify-content: right;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+    
 
         .navlink {
             text-decoration: none;
         }
     }
+
+
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 615px) {
     .header {
         nav {
-            justify-content: center;
+            justify-content: space-between;
+            gap: 22.5px;
+
+            .nav__icon {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+    
+                h2 {
+                    font-size: medium;
+                    font-weight: 400;
+                    margin: 0;
+                }
+            }
+
+            .nav__links {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
+
+                a {
+                    font-size: small;
+                    padding: 5px 7.5px;
+                }
+            }
         }
     }
 }
