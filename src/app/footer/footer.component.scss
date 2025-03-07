@@ -11,7 +11,8 @@
     margin-top: 50px;
 
     &__about {
-      flex: 2;
+      flex: 1;
+      justify-items: start;
       
       h2 {
         font-size: 1.4rem;
@@ -58,17 +59,22 @@
     }
     
     @media (max-width: 768px) {
-      flex: none;
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+      padding: 2.0rem 1.75rem;
       flex-direction: column;
-      padding: 2rem;
-      
-      &__about {
-        text-align: center;
-        margin-bottom: 1.5rem;
-      }
-      
+      align-items: center;
+      justify-content: center;
+
+
       &__contact {
+        margin-top: 15px;
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
       }
+      
+    
     }
   }

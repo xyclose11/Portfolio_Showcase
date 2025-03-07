@@ -14,7 +14,7 @@ export class ProjectsComponent {
       title: 'Melin',
       description:
         'An academic reference management application, designed to help users manage and organize their academic references efficiently.',
-      images: ['images/Melin.png'],
+      images: ['images/MelinHomePage.png'],
       technologies: [
         'ASP.NET Core',
         'C#',
